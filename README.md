@@ -1,8 +1,8 @@
 # PemogramanWeb
 =========KUMPULAN TUGAS PEMWEB=========
 
-NAMA  : ALFIATUN MASRIFAH
-NPM   : 18081010032
-KELAS : PEMWEB-A
+<P>NAMA  : ALFIATUN MASRIFAH<P>
+<P>NPM   : 18081010032<P>
+<P>KELAS : PEMWEB-A<P>
 
 =======================================
