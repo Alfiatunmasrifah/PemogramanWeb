@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav a{
+    color: white;
+    margin-top: 20px;
+    font-family: 'Raleway', bold;
+
+}
+
+
+/*----------Border atas---------*/
+
+.border-atas{
+    color: white;
+    background-color: black;
+    padding-left: 200px;
+    text-align: center;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+
+.text{
+    padding-right: 300px;
+    text-align: left;
+}
+
+.text h4{
+    color: yellow;
+    font-family: 'Raleway';
+}
+
+.border-atas2{
+    display: inline-flex;
+    padding: 80px;
+}
+ 
+.aboutme img{
+    padding: 100px;
+    margin-left: 150px;
+    
+}
+
+.isi-aboutme{
+    float: right;
+    width: 50%;
+    padding-top: 150px;
+    
+    font-family: 'Raleway';
+}
+
+.border3{
+    background-color: black;
+
+}
+
+.education{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.box{
+    padding: 40px;
+    padding-bottom: 200px;
+}
+
+
+
+/*---------SD---------*/
+
+.box-sd {
+    display: inline-flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.box-sd img{
+    margin-left: 20px;
+}
+
+.sd-title{
+    color: black;
+    padding-left: 30px ;
+    padding-right: 20px;
+}
+
+/*---------SMK---------*/
+
+
+.box-smk {
+    display: inline-flex;
+    margin-left: 270px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.box-smk img{
+    margin-left: 20px;
+}
+
+.smk-title{
+    color: black;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+/*---------SMP---------*/
+
+.box-smp {
+    display: inline-flex;
+    margin-left: 150px;
+    margin-top: 120px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.box-smp img{
+    margin-left: 20px;
+}
+
+.smp-title{
+    color: black;
+    padding-left: 30px ;
+    padding-right: 20px;
+}
+
+
+/*---------Kuliah---------*/
+
+
+.box-kuliah {
+    display: inline-flex;
+    margin-left: 270px;
+    margin-top: 120px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.box-kuliah img{
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.kuliah-title{
+    color: black;
+    padding-left: 30px ;
+    padding-right: 20px;
+}
+
+
+/*---------Skill---------*/
+
+.skill h2{
+    padding-top: 20px;
+    padding-left: 650px;
+}
+
+.isi-skill{
+    display: inline-flex;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 50px;
+    
+}
+
+.jarak-skill{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*----------Contact-------------*/
+
+.contact{
+    background-color: black;
+}
+
+.contact h2{
+    color: white;
+    padding-top: 20px;
+    padding-left: 650px;
+}
+
+.contact-wa {
+    display: inline-flex;
+    color: white;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+.contact-wa h3{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+/*----------Contact gmail-------------*/
+
+.contact-gmail {
+    display: inline-flex;
+    padding-left: 400px;
+    padding-top: 80px;
+    color: white;
+}
+
+.contact-gmail h3{
+    padding-left: 50px;
+}
+
+/*----------Contact instagram-------------*/
+
+
+.contact-ig {
+    display: inline-flex;
+    color: white;
+    padding-left: 200px;
+    padding-top: 170px;
+}
+
+.contact-ig h3{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+/*----------Contact instagram-------------*/
+
+.contact-twitter {
+    display: inline-flex;
+    padding-left: 400px;
+    padding-top: 80px;
+    color: white;
+}
+
+.contact-twitter h3{
+    padding-left: 75px;
+}
+
+/*-------Responsive------*/
+
+/* @media screen and (max-width: 513px) {
+    
+} */
