@@ -1,0 +1,70 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #132743;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+  
+  li a:hover {
+    background-color: #14AAFF;
+}
+
+.judul-atas h1{
+    text-align: center;
+}
+
+.judul-atas h4{
+    text-align: center;
+    color: dimgrey;
+}
+
+.menu h2{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.tittle h2{
+    text-align: center;
+    margin-top: 65px;
+}
+
+.judulinput h2{
+    text-align: center;
+}
+
+.stokbrg h3{
+    text-align: center;
+}
+
+.button {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #132743;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin-left: 360px;
+}
+
+p{
+    margin-left: 1000px;
+}
