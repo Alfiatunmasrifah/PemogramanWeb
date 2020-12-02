@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form class="mt-5">
+                    <div class="form-group">
+						<input type="hidden" id="id" class="form-control">
+						<input type="text" id="Tahun" class="form-control" placeholder="Masukan Tahun">
+					</div>
+					<div class="form-group">
+						<input type="hidden" id="id" class="form-control">
+						<input type="text" id="Tahun" class="form-control" placeholder="Masukan Jenjang dan Instansi">
+					</div>
+					
+                    <button type="submit" href="tambahdata.php" class="btn btn-primary btn-block saveData">INSERT</button>
+				</form>
+			</div>
+								
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-bordered mt-3">
+					<thead>
+						<tr>
+							<th>No</th>
+                            <th>Tahun</th>
+							<th>Jenjang</th>
+							<th>Aksi</th>
+                           
+						</tr>
+					</thead>
+					<tbody></tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5"><button class="btn btn-warning btn-block more">Load More</button></td>
+						</tr>
+					</tfoot>	
+				</table>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+		$(".tambahdatas").hide()
+		app = {
+			show: function(){
+				$("tbody").load('data.php', {type: 'view'}, function(response){
+					$("tbody").html(response);
+				})		
+			}
+		}
+		app.show()
+	})
+</script>
+<script>
+    $(document).ready(function(){ 
+      load_data();
+
+      $('form').on('submit',function(e){
+        e.preventDefault();
+        $.ajax({
+          type:$(this).attr('method'),
+          url:$(this).attr('action'),
+          data:$(this).serialize(),
+          success:function(){
+            load_data();
+            resetForm();
+          }
+        });
+      })
+    })
+      function load_data(){
+        $.get('data.php',function(data){
+          $('#user_data').html(data)
+          $('.hapusData').click(function(e){
+            e.preventDefault();
+            $.ajax({
+              type:'get',
+              url:$(this).attr('href'),
+              success:function(){
+                load_data();
+             }
+            });
+          })
+        })
+      }
+      function resetForm(){
+        $('[type=text]').val('');
+        $('[name=jenjang]').focus();
+      }
+  </script>
+</body>
+</html>
